@@ -97,8 +97,8 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="code ~/.zshrc"
-alias l="ls -ap --sort=extension"
+alias zshconfig="sudo nano ~/.zshrc"
+alias l="ls -a -w 1 --sort=extension"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 prompt_context() {
@@ -106,3 +106,6 @@ prompt_context() {
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
   fi
 }
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
