@@ -98,7 +98,7 @@ export LANG=en_US.UTF-8
 #
 # Example aliases
 alias zshconfig="sudo nano ~/.zshrc"
-alias l="ls -a -w 1 --sort=extension"
+alias l="ls -a --sort=extension"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 prompt_context() {

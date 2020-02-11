@@ -4,12 +4,12 @@ snap install --classic code
 #Curl
 apt install curl
 
-#ZSH
+#ZSH and Oh My ZSH
 apt install zsh
-
-#Oh My ZSH
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 apt install fonts-powerline
+rm ~/.zshrc && echo ".zshrc successfully removed"
+ln -s ~/dotfiles/zsh/.zshrc .zshrc && echo "symbol link to .zshrc created"
 
 #Mongo DB
 apt-get install gnupg
@@ -39,9 +39,4 @@ apt update
 apt-cache policy docker-ce
 apt install docker-ce
 
-#Spotify
-snap install spotify
-
 # chsh -s $(which zsh) // Command that are not working in script
-# export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" // Can't add this at zshrc filey
