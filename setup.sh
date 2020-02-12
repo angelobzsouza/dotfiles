@@ -9,8 +9,8 @@ apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 apt install fonts-powerline
 rm ~/.zshrc && echo ".zshrc successfully removed"
-ln -s ~/dotfiles/zsh/.zshrc .zshrc && echo "symbol link to .zshrc created"
-sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins
+ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc && echo "symbol link to .zshrc created"
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 #Mongo DB
 apt-get install gnupg
@@ -30,6 +30,8 @@ snap install slack --classic
 
 #NVM
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+chmod 777 ~/.nvm
+nvm install --lts
 
 #Docker
 apt update
