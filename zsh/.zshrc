@@ -102,6 +102,8 @@ alias zshconfig="sudo nano ~/.zshrc"
 alias l="ls -a --sort=extension"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+source ${(q-)PWD}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
