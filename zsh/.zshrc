@@ -104,7 +104,7 @@ alias cc="code ./"
 alias npmsd="npm run start:dev"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ${(q-)PWD}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
