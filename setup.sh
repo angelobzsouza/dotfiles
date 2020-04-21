@@ -43,4 +43,8 @@ apt update
 apt-cache policy docker-ce
 apt install docker-ce
 
+#Docker Composer
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
 # chsh -s $(which zsh) // Command that are not working in script
