@@ -105,6 +105,7 @@ alias rmdir="rm -rf"
 alias cc="code ./"
 alias npmsd="npm run start:dev"
 alias npmd="npm run dev"
+alias ys="yarn start"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
