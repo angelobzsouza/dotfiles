@@ -26,13 +26,11 @@ snap install dbeaver-ce
 #Postman
 snap install postman
 
+#Spotify
+snap install spotify
+
 #Slack
 snap install slack --classic
-
-#NVM
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
-chmod 777 ~/.nvm
-nvm install --lts
 
 #Docker
 apt update
@@ -46,5 +44,3 @@ apt install docker-ce
 #Docker Composer
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-
-# chsh -s $(which zsh) // Command that are not working in script

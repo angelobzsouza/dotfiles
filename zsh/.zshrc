@@ -71,7 +71,7 @@ ZSH_THEME="agnoster"
 plugins=(
 	git
 	zsh-autosuggestions
-	dotenv
+# 	dotenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,6 +106,8 @@ alias cc="code ./"
 alias npmsd="npm run start:dev"
 alias npmd="npm run dev"
 alias ys="yarn start"
+alias ysd="yarn start:dev"
+alias std="shutdown now"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
