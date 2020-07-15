@@ -108,6 +108,7 @@ alias npmd="npm run dev"
 alias ys="yarn start"
 alias ysd="yarn start:dev"
 alias std="shutdown now"
+alias killAll='(){kill $(pgrep -f $1)}'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
