@@ -111,6 +111,7 @@ alias std="shutdown now"
 alias killAll='(){kill $(pgrep -f $1)}'
 alias pip="pip3"
 alias python="python3"
+alias activevenv="source /Users/angelobezerradesouza/zedelivery/courier-api/venv/bin/activate"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
