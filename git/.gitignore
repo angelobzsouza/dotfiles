@@ -2,3 +2,4 @@ node_modules/
 .log
 .env
 .tool-versions
+.DS_Store
