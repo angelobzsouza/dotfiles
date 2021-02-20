@@ -13,13 +13,6 @@ ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc && echo "symbol link to .zshrc created"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-#Mongo DB
-apt-get install gnupg
-wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
-echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list #Just for Ubuntu 18.04
-apt-get update
-apt-get install -y mongodb-org
-
 #DBeaver
 snap install dbeaver-ce
 

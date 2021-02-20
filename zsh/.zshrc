@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/angelo/.oh-my-zsh"
+export ZSH="/Users/angelobezerradesouza/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,7 +100,7 @@ export LANG=en_US.UTF-8
 #
 # Example aliases
 alias zshconfig="sudo nano ~/.zshrc"
-alias l="ls -a"
+alias l="ls -la"
 alias rmdir="rm -rf"
 alias cc="code ./"
 alias npmsd="npm run start:dev"
@@ -109,6 +109,10 @@ alias ys="yarn start"
 alias ysd="yarn start:dev"
 alias std="shutdown now"
 alias killAll='(){kill $(pgrep -f $1)}'
+alias pip="pip3"
+alias p="python3"
+alias activevenv="source venv/bin/activate"
+alias gaap="gaa && gca! && gpf!"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -120,5 +124,6 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 #}
 
 prompt_context () { }
-
-. $HOME/.asdf/asdf.sh
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
