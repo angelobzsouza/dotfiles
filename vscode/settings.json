@@ -43,10 +43,9 @@
   "python.languageServer": "Pylance",
   "python.testing.pytestEnabled": true,
   "python.pythonPath": "venv/bin/python3",
-  "python.sortImports.path": "isort",
+  "python.sortImports.path": "${workspaceFolder}/venv/bin/isort",
   "python.sortImports.args": ["--atomic"],
   "python.formatting.provider": "black",
-  "python.defaultInterpreterPath": "venv/bin/python3",
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
@@ -72,14 +71,16 @@
   "elixirLS.dialyzerEnabled": false,
   "elixirLS.suggestSpecs": false,
 
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
 
   "sql-formatter.dialect": "pl/sql",
   "sql-formatter.uppercase": true,
   "sql-formatter.linesBetweenQueries": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
 }
