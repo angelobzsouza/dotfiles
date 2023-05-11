@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/angelobezerradesouza/.oh-my-zsh"
+export ZSH="/Users/angelo.souza/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -99,7 +99,7 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="sudo nano ~/.zshrc"
+alias zshconfig="sudo code ~/.zshrc"
 alias l="ls -la"
 alias rmdir="rm -rf"
 alias cc="code ./"
@@ -113,17 +113,19 @@ alias pip="pip3"
 alias p="python3"
 alias activevenv="source venv/bin/activate"
 alias gaap="gaa && gca! && gpf!"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias rmdir="sudo rm -R"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-#prompt_context() {
-#  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-#    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-#  fi
-#}
+source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 prompt_context () { }
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# Showing time
+RPROMPT="%{$fg[yellow]%}[%D{%f/%m/%y} | %D{%L:%M:%S}]"
+
+export NU_HOME=${HOME}/dev/nu
+export NUCLI_HOME=${NU_HOME}/nucli
+export PATH=${NUCLI_HOME}:${PATH}
