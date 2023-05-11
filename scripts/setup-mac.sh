@@ -28,6 +28,5 @@ source ~/.zshrc
 # Personalize Iterm
 git clone https://github.com/dracula/iterm.git
 
-
 # Install Spotify
 brew install --cask spotify

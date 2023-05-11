@@ -115,6 +115,7 @@ alias activevenv="source venv/bin/activate"
 alias gaap="gaa && gca! && gpf!"
 alias rmdir="sudo rm -R"
 alias update-dotfiles="code --list-extensions | sed -e 's/^/code --install-extension --force /' > ~/dotfiles/vscode/extensions.sh && gaa && gcmsg 'update dotfiles' && gp"
+alias morning="nu aws credentials refresh --maven-login --npm-login"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
