@@ -114,6 +114,7 @@ alias p="python3"
 alias activevenv="source venv/bin/activate"
 alias gaap="gaa && gca! && gpf!"
 alias rmdir="sudo rm -R"
+alias update-dotfiles="code --list-extensions | sed -e 's/^/code --install-extension --force /' > ~/dotfiles/vscode/extensions.sh && gaa && gcmsg 'update dotfiles' && gp"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

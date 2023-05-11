@@ -1,23 +1,30 @@
-code --install-extension acarreiro.calculate
-code --install-extension adpyke.vscode-sql-formatter
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension dracula-theme.theme-dracula
-code --install-extension eamodio.gitlens
-code --install-extension EditorConfig.EditorConfig
-code --install-extension esbenp.prettier-vscode
-code --install-extension iampeterbanjo.elixirlinter
-code --install-extension IronGeek.vscode-env
-code --install-extension JakeBecker.elixir-ls
-code --install-extension mechatroner.rainbow-csv
-code --install-extension mohsen1.prettify-json
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension ms-toolsai.jupyter
-code --install-extension naumovs.color-highlight
-code --install-extension oderwat.indent-rainbow
-code --install-extension ritwickdey.LiveServer
-code --install-extension rvest.vs-code-prettier-eslint
-code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension vscode-icons-team.vscode-icons
-code --install-extension wmaurer.change-case
+code --install-extension --force adpyke.vscode-sql-formatter
+code --install-extension --force afractal.node-essentials
+code --install-extension --force be5invis.vscode-icontheme-nomo-dark
+code --install-extension --force christian-kohler.path-intellisense
+code --install-extension --force dbaeumer.vscode-eslint
+code --install-extension --force dracula-theme.theme-dracula
+code --install-extension --force eamodio.gitlens
+code --install-extension --force EditorConfig.EditorConfig
+code --install-extension --force GitHub.vscode-pull-request-github
+code --install-extension --force JakeBecker.elixir-ls
+code --install-extension --force lixquid.calculator
+code --install-extension --force mechatroner.rainbow-csv
+code --install-extension --force mikestead.dotenv
+code --install-extension --force ms-kubernetes-tools.vscode-kubernetes-tools
+code --install-extension --force ms-python.python
+code --install-extension --force ms-python.vscode-pylance
+code --install-extension --force ms-vscode.vscode-typescript-tslint-plugin
+code --install-extension --force ms-vsliveshare.vsliveshare
+code --install-extension --force msjsdiag.debugger-for-chrome
+code --install-extension --force oderwat.indent-rainbow
+code --install-extension --force Orta.vscode-jest
+code --install-extension --force redhat.fabric8-analytics
+code --install-extension --force redhat.vscode-yaml
+code --install-extension --force rvest.vs-code-prettier-eslint
+code --install-extension --force shd101wyy.markdown-preview-enhanced
+code --install-extension --force VisualStudioExptTeam.intellicode-api-usage-examples
+code --install-extension --force VisualStudioExptTeam.vscodeintellicode
+code --install-extension --force vscode-icons-team.vscode-icons
+code --install-extension --force WallabyJs.quokka-vscode
+code --install-extension --force wix.vscode-import-cost

@@ -1,5 +1,10 @@
 #!/bin/bash
 # VSCode
+brew install --cask visual-studio-code
+chmod +x ~/dotfiles/vscode/extensions.sh
+./vscode/extensions.sh
+rm ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 # IntelliJ
 

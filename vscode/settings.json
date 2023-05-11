@@ -1,86 +1,65 @@
 {
-  "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.enablePreview": true,
-  "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.value": 6,
-  "workbench.editor.tabSizing": "shrink",
-  
-  "explorer.autoReveal": false,
-
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  
-  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  
-  "files.autoSave": "onFocusChange",
-  
-  "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.wordWrap": "on",
-  
-  "editor.suggestSelection": "first",
-  "editor.formatOnSave": true,
-  "editor.rename.enablePreview": false,
-  "editor.renderWhitespace": "all",
-  "editor.wordWrap": "on",
-  "editor.showFoldingControls": "always",
-  "editor.smoothScrolling": true,
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.minimap.enabled": false,
-  "editor.quickSuggestionsDelay": 20,
-  "editor.cursorStyle": "block",
-  
-  "debug.console.closeOnEnd": true,
-  "debug.inlineValues": true,
-  "debug.terminal.clearBeforeReusing": true,
-
-  "search.collapseResults": "alwaysCollapse",
-
-  "python.languageServer": "Pylance",
-  "python.testing.pytestEnabled": true,
-  "python.pythonPath": "venv/bin/python3",
-  "python.sortImports.path": "${workspaceFolder}/venv/bin/isort",
-  "python.sortImports.args": ["--atomic"],
-  "python.formatting.provider": "black",
-  "[python]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
-
-  "[sql]": {
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 6,
+    "workbench.editor.tabSizing": "shrink",
+    "explorer.autoReveal": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "files.autoSave": "onFocusChange",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.wordWrap": "on",
+    "editor.suggestSelection": "first",
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-  },
-  
-  "[yaml]": {
-    "editor.formatOnSave": false
-  },
-  
-  "[javascript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
-  
-  "explorer.confirmDragAndDrop": false,
-  
-  "elixirLS.dialyzerEnabled": false,
-  "elixirLS.suggestSpecs": false,
-
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-
-  "sql-formatter.dialect": "pl/sql",
-  "sql-formatter.uppercase": true,
-  "sql-formatter.linesBetweenQueries": 2,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
+    "editor.rename.enablePreview": false,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "editor.showFoldingControls": "always",
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.minimap.enabled": false,
+    "editor.quickSuggestionsDelay": 20,
+    "editor.cursorStyle": "block",
+    "debug.console.closeOnEnd": true,
+    "debug.inlineValues": true,
+    "debug.terminal.clearBeforeReusing": true,
+    "search.collapseResults": "alwaysCollapse",
+    "python.languageServer": "Pylance",
+    "python.testing.pytestEnabled": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "[sql]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "[yaml]": {
+        "editor.formatOnSave": false
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "elixirLS.dialyzerEnabled": false,
+    "elixirLS.suggestSpecs": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "sql-formatter.dialect": "pl/sql",
+    "sql-formatter.uppercase": true,
+    "sql-formatter.linesBetweenQueries": 2,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
 }

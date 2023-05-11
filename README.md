@@ -9,6 +9,7 @@ My configuration files for:
 
 The scripts files are used to make life easier when:
 - Config a new Linux Ubuntu machine
+- Config a new MacOS machine
 - Use AWS MFA
 - Create a new Node.js project
 
