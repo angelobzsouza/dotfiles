@@ -116,6 +116,7 @@ alias gaap="gaa && gca! && gpf!"
 alias rmdir="sudo rm -R"
 alias update-dotfiles="code --list-extensions | sed -e 's/^/code --install-extension --force /' > ~/dotfiles/vscode/extensions.sh && gaa && gcmsg 'update dotfiles' && gp"
 alias morning="nu aws credentials refresh --maven-login --npm-login"
+alias gaaf="lein lint fix | gaa"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -131,3 +132,10 @@ RPROMPT="%{$fg[yellow]%}[%D{%f/%m/%y} | %D{%L:%M:%S}]"
 export NU_HOME=${HOME}/dev/nu
 export NUCLI_HOME=${NU_HOME}/nucli
 export PATH=${NUCLI_HOME}:${PATH}
+export NU_COUNTRY=br
+
+# {mark} START IT-ENG NVM SETUP
+export NVM_DIR="/Users/angelo.souza/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
