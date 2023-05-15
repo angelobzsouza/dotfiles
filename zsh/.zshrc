@@ -139,3 +139,6 @@ export NVM_DIR="/Users/angelo.souza/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
+# GPG
+export GPG_TTY=$(tty)
+export PINENTRY_USER_DATA="USE_CURSES=1"
