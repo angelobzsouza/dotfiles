@@ -8,6 +8,9 @@ ln -s ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/s
 
 # IntelliJ
 
+# Docker
+brew install docker
+
 # Install ZSH
 brew install zsh
 # Install fonts for ZSH

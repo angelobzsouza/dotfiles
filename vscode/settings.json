@@ -62,4 +62,6 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
 }

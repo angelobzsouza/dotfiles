@@ -21,6 +21,7 @@ code --install-extension --force oderwat.indent-rainbow
 code --install-extension --force Orta.vscode-jest
 code --install-extension --force redhat.fabric8-analytics
 code --install-extension --force redhat.vscode-yaml
+code --install-extension --force ritwickdey.LiveServer
 code --install-extension --force rvest.vs-code-prettier-eslint
 code --install-extension --force shd101wyy.markdown-preview-enhanced
 code --install-extension --force VisualStudioExptTeam.intellicode-api-usage-examples
