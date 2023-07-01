@@ -132,6 +132,8 @@ RPROMPT="%{$fg[yellow]%}[%D{%f/%m/%y} | %D{%L:%M:%S}]"
 export NU_HOME=${HOME}/dev/nu
 export NUCLI_HOME=${NU_HOME}/nucli
 export PATH=${NUCLI_HOME}:${PATH}
+export A8R_HOME="${NU_HOME}/authorizer-scripts"
+export PATH="${A8R_HOME}:${PATH}"
 export NU_COUNTRY=br
 
 # {mark} START IT-ENG NVM SETUP

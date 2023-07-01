@@ -2,7 +2,6 @@ code --install-extension --force adpyke.vscode-sql-formatter
 code --install-extension --force afractal.node-essentials
 code --install-extension --force be5invis.vscode-icontheme-nomo-dark
 code --install-extension --force christian-kohler.path-intellisense
-code --install-extension --force dbaeumer.vscode-eslint
 code --install-extension --force dracula-theme.theme-dracula
 code --install-extension --force eamodio.gitlens
 code --install-extension --force EditorConfig.EditorConfig
@@ -11,9 +10,11 @@ code --install-extension --force JakeBecker.elixir-ls
 code --install-extension --force lixquid.calculator
 code --install-extension --force mechatroner.rainbow-csv
 code --install-extension --force mikestead.dotenv
+code --install-extension --force ms-azuretools.vscode-docker
 code --install-extension --force ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension --force ms-python.python
 code --install-extension --force ms-python.vscode-pylance
+code --install-extension --force ms-vscode-remote.remote-containers
 code --install-extension --force ms-vscode.vscode-typescript-tslint-plugin
 code --install-extension --force ms-vsliveshare.vsliveshare
 code --install-extension --force msjsdiag.debugger-for-chrome
@@ -29,3 +30,4 @@ code --install-extension --force VisualStudioExptTeam.vscodeintellicode
 code --install-extension --force vscode-icons-team.vscode-icons
 code --install-extension --force WallabyJs.quokka-vscode
 code --install-extension --force wix.vscode-import-cost
+code --install-extension --force wmaurer.change-case
