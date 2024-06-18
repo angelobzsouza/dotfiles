@@ -34,7 +34,7 @@
     "python.formatting.provider": "black",
     "[python]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
         }
     },
     "[sql]": {
@@ -67,5 +67,6 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "editor.stickyScroll.enabled": true
 }

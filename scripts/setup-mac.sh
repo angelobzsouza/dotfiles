@@ -6,8 +6,6 @@ chmod +x ~/dotfiles/vscode/extensions.sh
 rm ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
-# IntelliJ
-
 # Docker
 brew install docker
 

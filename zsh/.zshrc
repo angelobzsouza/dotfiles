@@ -115,8 +115,13 @@ alias activevenv="source venv/bin/activate"
 alias gaap="gaa && gca! && gpf!"
 alias rmdir="sudo rm -R"
 alias update-dotfiles="code --list-extensions | sed -e 's/^/code --install-extension --force /' > ~/dotfiles/vscode/extensions.sh && gaa && gcmsg 'update dotfiles' && gp"
-alias morning="nu aws credentials refresh --npm-login"
+alias refresh-credentials-br="nu aws shared-role-credentials refresh --account-alias=br --keep-policies casual-dev,eng,eng-prod-engineer && nu codeartifact login maven"
+alias morning="echo -e '${LIGHT_BLUE}Updating nucli, cljdev, purple and authorizer-scripts\n${NC}'; nu proj update nucli purple authorizer-scripts cljdev;
+			   echo -e '${LIGHT_GREEN}Refreshing BR AWS credentials${NC}'; nu aws shared-role-credentials refresh --account-alias=br --keep-policies prod-eng,eng,eng-prod-engineering,infra-ops,permissions-admin,shared-systems-resources && nu codeartifact login maven;
+			   echo -e '${LIGHT_GREEN}Refreshing MX AWS credentials${NC}'; nu-mx aws credentials refresh;
+			   echo -e '${LIGHT_GREEN}Refreshing CO AWS credentials${NC}'; nu-co aws credentials refresh"
 alias gaaf="lein lint-fix && gaa"
+alias awsconsole="nu aws shared-role-credentials web-console --account-alias br --keep-policies eng,casual-dev,eng-prod-engineering,prod-eng"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -144,3 +149,9 @@ export NVM_DIR="/Users/angelo.souza/.nvm"
 # GPG
 export GPG_TTY=$(tty)
 export PINENTRY_USER_DATA="USE_CURSES=1"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Java
+export JAVA_HOME=/Users/angelo.souza/.sdkman/candidates/java/current
