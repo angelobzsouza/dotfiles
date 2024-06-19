@@ -155,3 +155,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Java
 export JAVA_HOME=/Users/angelo.souza/.sdkman/candidates/java/current
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion

@@ -1,0 +1,239 @@
+// Place your key bindings in this file to override the defaults
+[
+    /**************************************************
+        view bindings
+    **************************************************/
+    {
+        "key": "alt+=",
+        "command": "workbench.action.increaseViewSize",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+-",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+tab",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty && !terminalFocus"
+    },
+    {
+        "key": "f1",
+        "command": "editor.action.showHover"
+    },
+    {
+        "key": "f3",
+        "command": "editor.action.referenceSearch.trigger",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor"
+    },
+    {
+        "key": "f12",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "shift shift",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl ctrl",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    /**************************************************
+        calva:
+    **************************************************/
+    {
+        "key": "alt+t t",
+        "command": "calva.runCustomREPLCommand",
+        "when": "calva:connected && editorLangId == 'clojure'",
+        "args": "t"
+    },
+    {
+        "key": "alt+t shift+t",
+        "command": "calva.runCustomREPLCommand",
+        "when": "calva:connected && editorLangId == 'clojure'",
+        "args": "t-"
+    },
+    /**************************************************
+        calva: repl
+    **************************************************/
+    {
+        "key": "alt+r r",
+        "command": "calva.jackIn",
+        "when": "calva:keybindingsEnabled && workspaceFolderCount > 0"
+    },
+    {
+        "key": "alt+r s",
+        "command": "calva.disconnect"
+    },
+    {
+        "key": "alt+r q",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "calva.showOutputWindow",
+                "workbench.action.closeEditorsAndGroup"
+            ]
+        },
+        "when": "calva:connected && calva:keybindingsEnabled"
+    },
+    {
+        "key": "alt+r o",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "calva.showOutputWindow",
+                "workbench.action.lockEditorGroup"
+            ]
+        },
+        "when": "calva:connected && calva:keybindingsEnabled"
+    },
+    {
+        "key": "alt+r backspace",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "calva.showOutputWindow",
+                "workbench.action.focusLastEditorGroup",
+                "editor.action.selectAll",
+                "editor.action.deleteLines"
+            ]
+        },
+        "when": "calva:connected && calva:keybindingsEnabled"
+    },
+    {
+        "key": "alt+r z",
+        "command": "calva.runCustomREPLCommand",
+        "when": "calva:connected && editorLangId == 'clojure'",
+        "args": "ns-"
+    },
+    {
+        "key": "alt+r x",
+        "command": "calva.runCustomREPLCommand",
+        "when": "calva:connected && editorLangId == 'clojure'",
+        "args": "x"
+    },
+    {
+        "key": "alt+r shift+x",
+        "command": "calva.runCustomREPLCommand",
+        "when": "calva:connected && editorLangId == 'clojure'",
+        "args": "x+"
+    },
+    {
+        "key": "alt+r l",
+        "command": "calva.loadFile",
+        "when": "calva:connected && calva:keybindingsEnabled && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+r c",
+        "command": "calva.interruptAllEvaluations",
+        "when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+cmd+enter",
+        "command": "calva.evaluateToCursor",
+        "when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+r f",
+        "command": "calva-fmt.alignCurrentForm",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    /**************************************************
+        file explorer
+    **************************************************/
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    /**************************************************
+        split panels
+    **************************************************/
+    {
+        "key": "alt+w a",
+        "command": "workbench.action.joinAllGroups",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+w x",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+w right",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "alt+w left",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "alt+w up",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "alt+w down",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "alt+w enter",
+        "command": "workbench.action.toggleEditorWidths"
+    },
+    /**************************************************
+        calva: paredit
+    **************************************************/
+    {
+        "key": "alt+up",
+        "command": "paredit.sexpRangeExpansion",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !calva:cursorInComment && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "alt+down",
+        "command": "paredit.sexpRangeContraction",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !calva:cursorInComment && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "paredit.slurpSexpForward",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "paredit.barfSexpForward",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    }
+    /**************************************************
+        inactive bindings: everything below here is just commands being removed from their default keybindings
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************
+    **************************************************/
+
+]

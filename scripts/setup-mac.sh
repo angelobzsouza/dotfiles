@@ -5,6 +5,8 @@ chmod +x ~/dotfiles/vscode/extensions.sh
 ./vscode/extensions.sh
 rm ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+rm ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 # Docker
 brew install docker

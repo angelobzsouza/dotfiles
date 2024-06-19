@@ -1,72 +1,124 @@
 {
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.editor.enablePreviewFromQuickOpen": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.editor.enablePreview": true,
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 6,
-    "workbench.editor.tabSizing": "shrink",
-    "explorer.autoReveal": false,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "files.autoSave": "onFocusChange",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.wordWrap": "on",
-    "editor.suggestSelection": "first",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 6,
+  "workbench.editor.tabSizing": "shrink",
+  "explorer.autoReveal": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+  "files.autoSave": "onFocusChange",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.wordWrap": "on",
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "editor.rename.enablePreview": false,
+  "editor.renderWhitespace": "all",
+  "editor.wordWrap": "on",
+  "editor.showFoldingControls": "always",
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestionsDelay": 20,
+  "editor.cursorStyle": "block",
+  "debug.console.closeOnEnd": true,
+  "debug.inlineValues": true,
+  "debug.terminal.clearBeforeReusing": true,
+  "search.collapseResults": "alwaysCollapse",
+  "python.languageServer": "Pylance",
+  "python.testing.pytestEnabled": true,
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[sql]": {
     "editor.formatOnSave": true,
-    "editor.rename.enablePreview": false,
-    "editor.renderWhitespace": "all",
-    "editor.wordWrap": "on",
-    "editor.showFoldingControls": "always",
-    "editor.smoothScrolling": true,
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.minimap.enabled": false,
-    "editor.quickSuggestionsDelay": 20,
-    "editor.cursorStyle": "block",
-    "debug.console.closeOnEnd": true,
-    "debug.inlineValues": true,
-    "debug.terminal.clearBeforeReusing": true,
-    "search.collapseResults": "alwaysCollapse",
-    "python.languageServer": "Pylance",
-    "python.testing.pytestEnabled": true,
-    "python.formatting.provider": "black",
-    "[python]": {
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        }
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.suggestSpecs": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "sql-formatter.dialect": "pl/sql",
+  "sql-formatter.uppercase": true,
+  "sql-formatter.linesBetweenQueries": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "redhat.telemetry.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.base": "json"
+  },
+  "workbench.editor.navigationScope": "editorGroup",
+  "workbench.editor.revealIfOpen": true,
+  "search.exclude": {
+    ".lsp/.cache": true
+  },
+  // Clojure & Calva
+  "calva.fmt.configPath": "CLOJURE-LSP",
+  "calva.paredit.defaultKeyMap": "strict",
+  "calva.customREPLCommandSnippets": [
+    {
+      "name": "Refresh REPL",
+      "repl": "clj",
+      "key": "x",
+      "snippet": "(clojure.tools.namespace.repl/refresh)"
     },
-    "[sql]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    {
+      "name": "Refresh-all REPL",
+      "repl": "clj",
+      "key": "x+",
+      "snippet": "(clojure.tools.namespace.repl/refresh-all)"
     },
-    "[yaml]": {
-        "editor.formatOnSave": false
+    {
+      "name": "Unalias all NS",
+      "repl": "clj",
+      "key": "ns-",
+      "snippet": "(map (partial ns-unalias *ns*) (keys (ns-aliases *ns*)))"
     },
-    "[javascript]": {
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    {
+      "name": "Run tests on namespace",
+      "key": "t",
+      "snippet": "(clojure.test/run-tests '$ns)"
     },
-    "explorer.confirmDragAndDrop": false,
-    "elixirLS.dialyzerEnabled": false,
-    "elixirLS.suggestSpecs": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+    {
+      "name": "Run single test",
+      "key": "t-",
+      "snippet": "(clojure.test/run-test-var #'$top-level-defined-symbol)"
+    }
+  ],
+  "calva.autoEvaluateCode": {
+    "onConnect": {
+      "clj": "(require '[clojure.test] '[clojure.tools.namespace.repl])(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))",
+      "cljs": "(try (require '[cljs.repl :refer [apropos dir doc find-doc print-doc pst source]]) (catch :default e (js/console.warn \"Failed to require cljs.repl utilities:\" (.-message e))))"
     },
-    "sql-formatter.dialect": "pl/sql",
-    "sql-formatter.uppercase": true,
-    "sql-formatter.linesBetweenQueries": 2,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "redhat.telemetry.enabled": false,
-    "editor.stickyScroll.enabled": true
+    "onFileLoaded": {
+      "clj": null,
+      "cljs": null
+    }
+  }
 }
