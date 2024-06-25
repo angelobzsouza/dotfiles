@@ -44,17 +44,17 @@
         calva:
     **************************************************/
     {
-        "key": "alt+t t",
+        "key": "cmd+shift+1",
         "command": "calva.runTestUnderCursor",
         "when": "calva:connected"
     },
     {
-        "key": "alt+t shift+t",
+        "key": "cmd+shift+0",
         "command": "calva.runAllTests",
         "when": "calva:connected"
     },
     {
-        "key": "alt+t r",
+        "key": "cmd+shift+2",
         "command": "calva.rerunTests",
         "when": "calva:connected"
     },
@@ -62,7 +62,7 @@
         calva: repl
     **************************************************/
     {
-        "key": "alt+l",
+        "key": "cmd+ctrl+1",
         "command": "runCommands",
         "args": {
             "commands": [
@@ -110,14 +110,15 @@
         "when": "calva:connected && calva:keybindingsEnabled"
     },
     {
-        "key": "alt+r backspace",
+        "key": "ctrl+cmd+2",
         "command": "runCommands",
         "args": {
             "commands": [
                 "calva.showOutputWindow",
                 "workbench.action.focusLastEditorGroup",
                 "editor.action.selectAll",
-                "editor.action.deleteLines"
+                "editor.action.deleteLines",
+                "workbench.action.focusFirstEditorGroup"
             ]
         },
         "when": "calva:connected && calva:keybindingsEnabled"
@@ -237,6 +238,66 @@
     {
         "key": "cmd+g",
         "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "-paredit.forceDeleteBackward",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorReadOnly && editorLangId == 'clojure' && paredit:keyMap == 'strict'"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-paredit.forwardDownSexp",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "cmd+pagedown",
+        "command": "-scrollPageDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-quickInput.next",
+        "when": "inQuickInput && quickInputType == 'quickPick'"
+    },
+    {
+        "key": "cmd+pageup",
+        "command": "-scrollPageUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-quickInput.previous",
+        "when": "inQuickInput && quickInputType == 'quickPick'"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-paredit.backwardUpSexp",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-scrollLineUp",
+        "when": "textInputFocus"
     }
     /**************************************************
         inactive bindings: everything below here is just commands being removed from their default keybindings

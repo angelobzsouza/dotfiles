@@ -121,5 +121,36 @@
       "cljs": null
     }
   },
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "window.zoomLevel": 1,
+  "calva.prettyPrintingOptions": {
+    "printEngine": "pprint",
+    "enabled": false,
+    "width": 120,
+    "maxLength": 50
+  },
+  "[clojure]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordSeparators": "\t ()\"':,;~@#$%^&{}[]`-./",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingOvertype": "auto",
+    "editor.autoClosingQuotes": "languageDefined",
+    "editor.formatOnType": true,
+    "editor.autoIndent": "full",
+    "editor.formatOnPaste": true,
+    "editor.matchBrackets": "never",
+    "editor.guides.indentation": false,
+    "editor.parameterHints.enabled": false,
+    "editor.unicodeHighlight.allowedCharacters": {
+      " ": true,
+      "꞉": true
+    },
+    "editor.foldingStrategy": "indentation"
+  }
 }
