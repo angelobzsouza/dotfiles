@@ -29,9 +29,6 @@
   "debug.inlineValues": true,
   "debug.terminal.clearBeforeReusing": true,
   "search.collapseResults": "alwaysCollapse",
-  "python.languageServer": "Pylance",
-  "python.testing.pytestEnabled": true,
-  "python.formatting.provider": "black",
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
@@ -49,8 +46,6 @@
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "explorer.confirmDragAndDrop": false,
-  "elixirLS.dialyzerEnabled": false,
-  "elixirLS.suggestSpecs": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -116,9 +111,15 @@
       "clj": "(require '[clojure.test] '[clojure.tools.namespace.repl])(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))",
       "cljs": "(try (require '[cljs.repl :refer [apropos dir doc find-doc print-doc pst source]]) (catch :default e (js/console.warn \"Failed to require cljs.repl utilities:\" (.-message e))))"
     },
+    "calva.outputDestinations": {
+      "evalResults": "terminal",
+      "evalOutput": "terminal",
+      "otherOutput": "terminal"
+    },
     "onFileLoaded": {
       "clj": null,
       "cljs": null
     }
-  }
+  },
+  "security.workspace.trust.untrustedFiles": "open"
 }

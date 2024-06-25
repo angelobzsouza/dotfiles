@@ -45,19 +45,39 @@
     **************************************************/
     {
         "key": "alt+t t",
-        "command": "calva.runCustomREPLCommand",
-        "when": "calva:connected && editorLangId == 'clojure'",
-        "args": "t"
+        "command": "calva.runTestUnderCursor",
+        "when": "calva:connected"
     },
     {
         "key": "alt+t shift+t",
-        "command": "calva.runCustomREPLCommand",
-        "when": "calva:connected && editorLangId == 'clojure'",
-        "args": "t-"
+        "command": "calva.runAllTests",
+        "when": "calva:connected"
+    },
+    {
+        "key": "alt+t r",
+        "command": "calva.rerunTests",
+        "when": "calva:connected"
     },
     /**************************************************
         calva: repl
     **************************************************/
+    {
+        "key": "alt+l",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.files.saveAll",
+                {
+                    "command": "calva.runCustomREPLCommand",
+                    "args": {
+                        "ns": "user",
+                        "snippet": "(require 'clojure.tools.namespace.repl)(clojure.tools.namespace.repl/refresh)"
+                    }
+                }
+            ]
+        },
+        "when": "calva:connected"
+    },
     {
         "key": "alt+r r",
         "command": "calva.jackIn",
@@ -208,6 +228,15 @@
         "key": "shift+alt+j",
         "command": "paredit.barfSexpForward",
         "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "cmd+b",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+g",
+        "command": "workbench.action.toggleSidebarVisibility"
     }
     /**************************************************
         inactive bindings: everything below here is just commands being removed from their default keybindings
@@ -235,5 +264,4 @@
     **************************************************
     **************************************************
     **************************************************/
-
 ]
