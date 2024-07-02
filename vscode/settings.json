@@ -49,7 +49,6 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "sql-formatter.dialect": "pl/sql",
   "sql-formatter.uppercase": true,
   "sql-formatter.linesBetweenQueries": 2,
   "javascript.updateImportsOnFileMove.enabled": "always",
