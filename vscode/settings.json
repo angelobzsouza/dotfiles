@@ -1,5 +1,4 @@
 {
-  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "vscode-icons",
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.startupEditor": "newUntitledFile",
@@ -7,7 +6,6 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 6,
   "workbench.editor.tabSizing": "shrink",
-  "explorer.autoReveal": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
   "files.autoSave": "onFocusChange",
@@ -17,7 +15,6 @@
   "editor.formatOnSave": true,
   "editor.rename.enablePreview": false,
   "editor.renderWhitespace": "all",
-  "editor.wordWrap": "on",
   "editor.showFoldingControls": "always",
   "editor.smoothScrolling": true,
   "editor.cursorBlinking": "expand",
@@ -67,14 +64,13 @@
   "files.associations": {
     "*.base": "json"
   },
-  "workbench.editor.navigationScope": "editorGroup",
   "workbench.editor.revealIfOpen": true,
   "search.exclude": {
     ".lsp/.cache": true
   },
   // Clojure & Calva
   "calva.fmt.configPath": "CLOJURE-LSP",
-  "calva.paredit.defaultKeyMap": "strict",
+  "calva.paredit.defaultKeyMap": "original",
   "calva.customREPLCommandSnippets": [
     {
       "name": "Refresh REPL",
@@ -151,5 +147,10 @@
       "꞉": true
     },
     "editor.foldingStrategy": "indentation"
-  }
+  },
+  "workbench.colorTheme": "Dracula Theme",
+  "clojure.trace.server": "messages",
+  "editor.hover.delay": 1000,
+  "editor.hover.hidingDelay": 150,
+  "explorer.confirmDelete": false
 }

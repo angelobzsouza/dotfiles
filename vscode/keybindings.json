@@ -62,7 +62,7 @@
         calva: repl
     **************************************************/
     {
-        "key": "cmd+ctrl+1",
+        "key": "cmd+ctrl+2",
         "command": "runCommands",
         "args": {
             "commands": [
@@ -110,7 +110,7 @@
         "when": "calva:connected && calva:keybindingsEnabled"
     },
     {
-        "key": "ctrl+cmd+2",
+        "key": "ctrl+cmd+1",
         "command": "runCommands",
         "args": {
             "commands": [
@@ -298,31 +298,58 @@
         "key": "ctrl+pageup",
         "command": "-scrollLineUp",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+a",
+        "command": "-notification.acceptPrimaryAction",
+        "when": "notificationFocus || notificationToastsVisible"
+    },
+    {
+        "key": "shift+cmd+a",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "cmd+r",
+        "command": "calva.showResultOutputDestination",
+        "when": "calva:keybindingsEnabled"
+    },
+    {
+        "key": "ctrl+alt+o o",
+        "command": "-calva.showResultOutputDestination",
+        "when": "calva:keybindingsEnabled"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+f12",
+        "command": "-editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+f12",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "cmd+g c",
+        "command": "copilot-chat.focus"
+    },
+    {
+        "key": "shift+f12",
+        "command": "-goToPreviousReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
     }
-    /**************************************************
-        inactive bindings: everything below here is just commands being removed from their default keybindings
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************
-    **************************************************/
 ]

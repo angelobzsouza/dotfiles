@@ -75,6 +75,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.nurc
 
 # User configuration
 
